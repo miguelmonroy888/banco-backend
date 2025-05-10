@@ -12,10 +12,10 @@ const solicitudRoutes = require('./routes/solicitud.routes');
 app.use(cors());
 app.use(express.json());
 
-// Rutas (las agregaremos después)
+// Rutas 
 app.get('/', (req, res) => res.send('API del banco funcionando'));
 
-//
+// Rutas para cliente
 app.use('/api/auth', authRoutes);
 app.use('/api/clientes', clienteRoutes);
 app.use('/api/clientes', obligacionRoutes);
